@@ -6,6 +6,7 @@ import SplitAbout from '@/components/sections/about/SplitAbout';
 import FeatureCardTwo from '@/components/sections/feature/FeatureCardTwo';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBase from '@/components/sections/footer/FooterBase';
+import { Zap, TrendingUp } from 'lucide-react';
 
 const assetMap = [
   { "id": "hero-image", "url": "https://images.pexels.com/photos/34261438/pexels-photo-34261438.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "A barista making coffee with an espresso machine in a contemporary cafe setting." },
@@ -66,8 +67,8 @@ export default function Home() {
         <div className="mx-auto px-4 md:px-6">
           <FeatureCardTwo
             features={[
-              { title: "Advanced Analytics", description: "Gain deep insights into your data.", icon: "Zap" },
-              { title: "Scalability", description: "Grow your business without limits.", icon: "TrendingUp" }
+              { title: "Advanced Analytics", description: "Gain deep insights into your data.", icon: Zap },
+              { title: "Scalability", description: "Grow your business without limits.", icon: TrendingUp }
             ]}
             className="bg-blue-50 text-blue-900"
           />
